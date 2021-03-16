@@ -14,25 +14,90 @@
 }
 
 .App-header {
+  height: 20vh;
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App-header > h1 {
+  font-family: 'Courier New', Courier, monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Header-text{
+  padding-bottom: 1.25rem;
 }
+
+#Header-link {
+  color: #1fcf22;
+  margin-bottom: 4.256rem;
+}
+
+.container{
+  position: relative;
+  min-height: 200vh;
+}
+
+.container-grid{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-gap: 10px;
+  border: 1px solid #ddd;
+  height: auto;
+  margin: 10px 10px;
+}
+
+.editor{
+
+}
+.editing-area{
+  width: 100% !important;
+  border:  0 !important; 
+  position: relative  !important;
+
+}
+
+.search-input{
+  margin-top: 1.25rem;
+  padding: 10px 10px 10px 10px;
+  width: 80%;
+  border: 2px solid black;
+}
+
+.output-box{
+  border-left: 2px solid gray;
+  height: 200vh;
+}
+.file-type{
+  /* text-align: left; */
+  margin-top: 0.625rem;
+}
+
+input[type="radio"]{
+  display: inline;
+}
+
+.footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 8vh;
+  background-color: rgb(198, 215, 231);
+  color: white;
+  text-align: right;
+}
+
+.footer a {
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding: 10px 10px;
+}
+footer a:hover{
+  color: blue;
+}
+
